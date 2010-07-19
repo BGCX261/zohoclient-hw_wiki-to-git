@@ -1,0 +1,34 @@
+ZohoClient api to access Zoho services.
+
+
+ To use ZohoClient you need apiKey.
+ apikey - a key to access Zoho API (Zoho Applications). We use this API key to track usage. Get your API key now
+
+
+ How to login to ZohoClient to use ZohoAPI fully?
+
+      Use zohoclient's login method.
+
+
+ How to set Proxy?
+
+      Use the below code snippet if you are accessing through Proxy server
+      Invoke the code before using ZohoClient
+
+      System.setProperty("proxySet", "true");
+      System.setProperty("http.proxyHost", "web-proxy");
+      System.setProperty("http.proxyPort", "80");
+      System.setProperty("https.proxyHost", "web-proxy");
+      System.setProperty("https.proxyPort", "80");
+
+      java.net.Authenticator.setDefault(
+          new java.net.Authenticator()
+          {
+              protected java.net.PasswordAuthentication getPasswordAuthentication()
+              {
+                  java.net.PasswordAuthentication pass = new java.net.PasswordAuthentication("USERNAME", "PASSWORD".toCharArray());
+                  return pass;
+              }
+          }
+      );
+
