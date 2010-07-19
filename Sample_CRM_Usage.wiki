@@ -1,0 +1,20 @@
+Following is the code snippet for added a record in CRM Module using ZohoAPI
+
+{
+ String ticket = "12345678123456781234567812345678"; // create a ticket for your login... 
+ ZohoCRMClient  zc = ZohoClient.getClient(ZohoConstants.CRM,apikey, ticket);
+ HashMap contactInfo = new HashMap();
+ contactInfo.put("Last Name","Yoge"); 
+ contactInfo.put("Email","yogendrav@zohocorp.com"); 
+ contactInfo.put("Phone","9840425388"); 
+ contactInfo.put("Newsletter","false"); 
+ contactInfo.put("Zoho Service","Creator"); 
+ contactInfo.put("Lead Source","Registration"); 
+ contactInfo.put("Edition","Yoge"); 
+ contactInfo.put("Reg. Date","10/10/2009"); 
+ contactInfo.put("Zoho ID","yoge_babu1"); 
+ contactInfo.put("Contact Owner","pnandhini@zohocorp.com"); 
+ contactInfo.put("Status","Not Contacted"); 
+ contactInfo.put("Category","Free User"); 
+ zc.createRecord("Contact", contactInfo);
+}
