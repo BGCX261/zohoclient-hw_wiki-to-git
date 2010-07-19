@@ -1,20 +1,19 @@
 Following is the code snippet for added a record in CRM Module using ZohoAPI
- # numbered list
-{
- String ticket = "12345678123456781234567812345678"; // create a ticket for your login... 
- ZohoCRMClient  zc = ZohoClient.getClient(ZohoConstants.CRM,apikey, ticket);
- HashMap contactInfo = new HashMap();
- contactInfo.put("Last Name","John"); 
- contactInfo.put("Email","abc@xyz.com"); 
- contactInfo.put("Phone","9840425388"); 
- contactInfo.put("Newsletter","false"); 
- contactInfo.put("Zoho Service","PetStore"); 
- contactInfo.put("Lead Source","Registration"); 
- contactInfo.put("Edition","Enterprise"); 
- contactInfo.put("Reg. Date","10/10/2009"); 
- contactInfo.put("Zoho ID","yoge_babu1"); 
- contactInfo.put("Contact Owner","albert@petstore.com"); 
- contactInfo.put("Status","Not Contacted"); 
- contactInfo.put("Category","Free User"); 
- zc.createRecord("Contact", contactInfo);
-}
+ 
+
+ `String ticket = "12345678123456781234567812345678"; // create a ticket for your login... `
+` ZohoCRMClient  zc = ZohoClient.getClient(ZohoConstants.CRM,apikey, ticket);`
+` HashMap contactInfo = new HashMap();`
+ `contactInfo.put("Last Name","John"); `
+ `contactInfo.put("Email","abc@xyz.com");` 
+ `contactInfo.put("Phone","9840425388"); `
+ `contactInfo.put("Newsletter","false"); `
+ `contactInfo.put("Zoho Service","PetStore");` 
+ `contactInfo.put("Lead Source","Registration");` 
+ `contactInfo.put("Edition","Enterprise"); `
+ `contactInfo.put("Reg. Date","10/10/2009");` 
+ `contactInfo.put("Zoho ID","yoge_babu1"); `
+ `contactInfo.put("Contact Owner","albert@petstore.com"); `
+ `contactInfo.put("Status","Not Contacted");`
+ `contactInfo.put("Category","Free User"); `
+ `zc.createRecord("Contact", contactInfo);`
