@@ -1,6 +1,7 @@
  How to get applications for a particular user?
 
  eg:
+{{{
       ZohoCreatorClient zc = (ZohoCreatorClient) ZohoClient.getClient(ZohoConstants.CREATOR, apikey, username, password); // or use ZohoClient.getClient(ZohoConstants.CREATOR, apikey, ticket);
       List applications = zc.getApplications(); // List which contains list of Properties (this properties has the information of a application).
                                                 // it will throw ZohoError if any error occurred. To get Error details see getErrorCodes & getErrorMessages in ZohoError.
@@ -16,19 +17,19 @@
           String viewUrl = props.getProperty("view"); // a url to view this application.
           String editUrl = props.getProperty("edit"); // a url to edit this application. In case if you are using shared applications (getSharedApplications), this will be null if it is shared as readOnly.
       }
-
+}}}
 
  How to get shared applications for a particular user?
-
+{{{
       List applications = zc.getSharedApplications(); // follow the same procedure as above
-
+}}}
 
  What is Criteria?
 
       Criteria is a condition (or filter) to be applied while fetching/deleting/updating the records.
 
  How to use Criteria in creator apps?
-
+{{{
       List criteriaList = new ArrayList();
 
       Properties criteria = new Properties();
@@ -44,5 +45,5 @@
       criteriaList.add(criteria);
 
       zohoClient.viewRecord("OWNER NAME", "APP LINKNAME", "FORM NAME", criteriaList, isAnd)); //  You can specify multiple criteria using "AND"/ "OR" operator using isAnd (boolean) parameter.
-
+}}}
  
