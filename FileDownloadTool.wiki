@@ -1,6 +1,6 @@
 #summary Wiki detailing the usage of File Download Tool for downloading all the files uploaded to a form in a Zoho Creator application.
 
-= In a form containing File Upload fields, it is cumbersome to download each and every file when there are a large number of records involved. Here's a tool thats going to make life a lot more simpler. =
+In a form containing File Upload fields, it is cumbersome to download each and every file when there are a large number of records involved. Here's a tool thats going to make life a lot more simpler.
 
 This tool has been built using VB and Zoho Creator APIs. To download files from your View:
 
@@ -16,4 +16,3 @@ This tool has been built using VB and Zoho Creator APIs. To download files from 
 Please make sure that file upload field is displayed in the View from which you are trying to download the files. 
 
 In a matter of few minutes all your files would be downloaded to the folder specified by you. 
-
