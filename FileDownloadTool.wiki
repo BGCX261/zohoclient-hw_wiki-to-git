@@ -4,14 +4,14 @@ In a form containing File Upload fields, it is cumbersome to download each and e
 
 This tool has been built using VB and Zoho Creator APIs. To download files from your View:
 
-1. Download this executable file from here. 
-2. Run this file.
-3. Log in using your Zoho Credentials. 
-4. From the first dropdown, choose the application in which all the files have been uploaded.
-5. In the second dropdown, choose the view from which the files are to be downloaded. 
-6. In the text box that follows, mention the Deluge name of the File Upload field. In case you need help in getting the field name right, click on the help link next to textbox. You will be taken to a page listing all the applications, the forms, their fields, views etc. 
-7. Specify the path where you would like the files to be downloaded. 
-8. Click Download to being downloading. 
+# Download this executable file from here. 
+# Run this file.
+# Log in using your Zoho Credentials. 
+# From the first dropdown, choose the application in which all the files have been uploaded.
+# In the second dropdown, choose the view from which the files are to be downloaded. 
+# In the text box that follows, mention the Deluge name of the File Upload field. In case you need help in getting the field name right, click on the help link next to textbox. You will be taken to a page listing all the applications, the forms, their fields, views etc. 
+# Specify the path where you would like the files to be downloaded. 
+# Click Download to being downloading. 
 
 Please make sure that file upload field is displayed in the View from which you are trying to download the files. 
 
