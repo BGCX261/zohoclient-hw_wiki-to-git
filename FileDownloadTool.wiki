@@ -4,7 +4,7 @@ In a form containing File Upload fields, it is cumbersome to download each and e
 
 This tool has been built using VB and Zoho Creator APIs. To download files from your View:
 
-  # Download this executable file from here. 
+  # Download this executable file from [http://code.google.com/p/zohoclient/downloads/detail?name=FileDownloader.exe&can=2&q=#makechanges here]. 
   # Run this file.
   # Log in using your Zoho Credentials. 
   # From the first dropdown, choose the application in which all the files have been uploaded.
