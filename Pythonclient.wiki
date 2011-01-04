@@ -2,7 +2,7 @@
 
 == Program for Add/Modify ZohoCreator Records ==
 
-The program available in [http://code.google.com/p/zohoclient/downloads/detail?name=zohoclient.py&can=2&q=]
+The program available [http://code.google.com/p/zohoclient/downloads/detail?name=zohoclient.py&can=2&q=]here
 
 ===Add Record===
 
