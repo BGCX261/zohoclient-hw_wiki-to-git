@@ -1,0 +1,31 @@
+#summary client program to use ZohoCreator API
+
+= Program for Add/Modify ZohoCreator Records =
+
+==Add Record==
+
+{{{
+dict = {"First Name":"madhan","Last Name":"kumar","Email":"loeshkumar@zohocorp.com","Phone":"9789218448"}
+list = ["Last Name","Email","Phone","First Name"]
+ticket = "befa1b4246a3c9eb57cc093612e44d69"
+apikey = "7eNY8Ws7l-JJcXo8JOZr2IH9Q8poHnsxkQaMGWeIdlI$"
+zcobj = ZohoClient(apikey)
+zcrobj = zcobj.getClient(ZohoConstants().CRM(),ticket)
+insertRecord = zcrobj.createRecord("Contacts",dict)  #insertrecord 
+
+}}}
+
+==Modify Record==
+
+{{{
+dict = {"First Name":"madhan","Last Name":"kumar","Email":"loeshkumar@zohocorp.com","Phone":"9789218448"}
+list = ["Last Name","Email","Phone","First Name"]
+ticket = "befa1b4246a3c9eb57cc093612e44d69"
+apikey = "7eNY8Ws7l-JJcXo8JOZr2IH9Q8poHnsxkQaMGWeIdlI$"
+zcobj = ZohoClient(apikey)
+zcrobj = zcobj.getClient(ZohoConstants().CRM(),ticket)
+updateRecords = zcrobj.updateRecord("Contacts",dict,"269855000000044097") #updateRecord
+
+
+
+}}}
